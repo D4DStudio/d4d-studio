@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | D4D Studio</title>
+  <meta name="description" content="Contact D4D Studio — Get in touch for collaborations, partnerships, and creative projects." />
+  <style>
+    body {
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(135deg,#0b0b0f,#1e1f24);
+      color:#e9eef0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+    }
+    .container{
+      width:100%;
+      max-width:1250px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:20px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+    header, footer{
+      padding:24px 36px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    nav a{
+      margin-left:16px;
+      text-decoration:none;
+      color:#bfc6ca;
+      font-weight:600;
+      transition:color .2s;
+    }
+    nav a:hover,
+    nav a.active{ color:#00bcd4; }
+
+    main{
+      padding:60px 36px;
+      max-width:900px;
+      margin:0 auto;
+      line-height:1.7;
+      color:#dce1e3;
+    }
+
+    main h2{
+      font-size:2rem;
+      color:#00bcd4;
+      margin-bottom:20px;
+    }
+
+    ul.contact-list{
+      list-style:none;
+      padding:0;
+      margin-top:20px;
+    }
+    .contact-list li{
+      margin-bottom:12px;
+      font-size:1.05rem;
+    }
+    .contact-list a{
+      color:#00bcd4;
+      text-decoration:none;
+    }
+    .contact-list a:hover{
+      text-decoration:underline;
+    }
+
+    footer{
+      background:rgba(255,255,255,0.02);
+      color:#bfc6ca;
+      font-size:0.9rem;
+    }
+
+    @media(max-width:740px){
+      header, footer, main{padding:18px;}
+      main h2{font-size:1.6rem;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <h1>D4D Studio</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! For collaborations, partnerships, or inquiries:</p>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:info@d4dstudio.net">info@d4dstudio.net</a></li>
+        <li>Instagram: <a href="https://instagram.com/the.d4d.studio" target="_blank">@The.D4D.Studio</a></li>
+        <li>X (Twitter): <a href="https://x.com/the_d4d_studio" target="_blank">@The_D4D_Studio</a></li>
+      </ul>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div>© <span id="year"></span> D4D Studio</div>
+      <div>Built with ❤️ by D4D</div>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

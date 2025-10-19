@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About | D4D Studio</title>
+  <meta name="description" content="Learn more about D4D Studio — a creative collective for Games, Apps & Art." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(135deg,#0b0b0f,#1e1f24);
+      color:#e9eef0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+    }
+    .container{
+      width:100%;
+      max-width:1250px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:20px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+    header, footer{
+      padding:24px 36px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    nav a{
+      margin-left:16px;
+      text-decoration:none;
+      color:#bfc6ca;
+      font-weight:600;
+      transition:color .2s;
+    }
+    nav a:hover,
+    nav a.active{ color:#00bcd4; }
+
+    main{
+      padding:60px 36px;
+      max-width:900px;
+      margin:0 auto;
+      line-height:1.7;
+      color:#dce1e3;
+    }
+
+    main h2{
+      font-size:2rem;
+      color:#00bcd4;
+      margin-bottom:20px;
+    }
+
+    footer{
+      background:rgba(255,255,255,0.02);
+      color:#bfc6ca;
+      font-size:0.9rem;
+    }
+
+    @media(max-width:740px){
+      header, footer, main{padding:18px;}
+      main h2{font-size:1.6rem;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <h1>D4D Studio</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <h2>About D4D Studio</h2>
+      <p>
+        D4D Studio is an independent creative collective where imagination and technology meet.
+        We design and develop interactive worlds, meaningful tools, and expressive digital art pieces.
+        Our mission is to craft experiences that spark curiosity and inspiration.
+      </p>
+      <p>
+        From game development to creative apps and visual design, we believe that every idea can
+        evolve into something magical when driven by passion and intention.
+      </p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div>© <span id="year"></span> D4D Studio</div>
+      <div>Built with ❤️ by D4D</div>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
