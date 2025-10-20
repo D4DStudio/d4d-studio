@@ -182,11 +182,12 @@
       font-size:0.92rem;
     }
 
-    @media (max-width:740px){
-      header, main, footer{ padding:18px; }
-      .banner h1{ font-size:1.8rem; }
-      .hero h3{ font-size:1.4rem; }
-    }
+/* Mobil için özel ayar */
+@media (max-width: 740px) {
+  .banner {
+    aspect-ratio: 4 / 1; /* telefonda biraz daha yüksek görünsün */
+    min-height: 120px;
+  }
   </style>
 </head>
 <body>
